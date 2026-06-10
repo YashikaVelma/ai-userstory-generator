@@ -5,7 +5,7 @@ on: [push, pull_request]
 
 jobs:
   build:
-    runs-down: ubuntu-latest
+        runs-on: ubuntu-latest
 
     steps:
     # ၁။ GitHub ပေါ်က ကုဒ်တွေကို ဆွဲယူခြင်း(pulling code from GitHub)
