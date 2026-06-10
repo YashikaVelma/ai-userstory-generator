@@ -1,0 +1,31 @@
+name: DevOps CI Pipeline
+
+# ဘယ်အချိန်မှာ အလုပ်လုပ်မလဲ - ကုဒ်တွေကို push လုပ်တဲ့အချိန်တိုင်း when will it work - everytime the codes got pushed 
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-down: ubuntu-latest
+
+    steps:
+    # ၁။ GitHub ပေါ်က ကုဒ်တွေကို ဆွဲယူခြင်း(pulling code from GitHub)
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    # ၂။ Python စနစ်ကို Pipeline ထဲ ထည့်သွင်းခြင်း (putting python in pipelines)
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    # ၃။ လိုအပ်တဲ့ စာရွက်စာတမ်း (Dependencies) တွေ သွင်းခြင်း (putting dependencies)
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    # ၄။ ကုဒ်တွေရဲ့ ပုံစံ မှန်၊ မမှန် အခြေခံစစ်ဆေးခြင်း (Syntax Check true or false)
+    - name: Lint with Python syntax check
+      run: |
+        # Python ကုဒ်ဖိုင်တွေ စာလုံးပေါင်း မှား၊ မမှား အကြမ်းဖျင်း စစ်ဆေးခြင်း checking python code 
+        python -m py_compile app.py
