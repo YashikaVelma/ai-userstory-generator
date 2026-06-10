@@ -1,13 +1,12 @@
-name: DevOps CI Pipeline
+ubuntu-latest: DevOps CI Pipeline
 
 # ဘယ်အချိန်မှာ အလုပ်လုပ်မလဲ - ကုဒ်တွေကို push လုပ်တဲ့အချိန်တိုင်း when will it work - everytime the codes got pushed 
 on: [push, pull_request]
 
 jobs:
   build:
-        runs-on: ubuntu-latest
-
-    steps:
+        ubuntu-latestteps:
+        
     # ၁။ GitHub ပေါ်က ကုဒ်တွေကို ဆွဲယူခြင်း(pulling code from GitHub)
     - name: Checkout code
       uses: actions/checkout@v4
