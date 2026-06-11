@@ -10,7 +10,7 @@ Welcome to the **AI-Assisted User Story Generator**! This project is built as pa
 
 ## 🚀 Live Demo & Deliverables
 * **Live Web Application:** 👉 https://ai-userstory-generator-fb24zshsngeyjedswgkpix.streamlit.app/
-* **GitHub Project Board (Scrum):** 👉 https://github.com/YashikaVelma/ai-userstory-generator/issues
+* **GitHub Project Board (Scrum):** 👉 [https://github.com/YashikaVelma/ai-userstory-generator/issues](https://github.com/users/YashikaVelma/projects/1/views/1)
 
 ---
 ## Target Audience & Scope:
