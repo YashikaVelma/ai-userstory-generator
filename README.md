@@ -4,7 +4,7 @@
 
 Welcome to the **AI-Assisted User Story Generator**! This project is built as part of the Agile Project Management module, delivering a digital solution under the theme **"AI DevOps Assistant for Software Teams"**. 
 
-This application helps software product teams quickly transform rough feature ideas into professional, standard Agile User Stories and detailed Acceptance Criteria using advanced AI.
+**This application helps software product teams quickly transform rough feature ideas into professional, standard Agile User Stories and detailed Acceptance Criteria using advanced AI.**
 
 ---
 
@@ -13,10 +13,10 @@ This application helps software product teams quickly transform rough feature id
 * **GitHub Project Board (Scrum):** 👉 https://github.com/YashikaVelma/ai-userstory-generator/issues
 
 ---
-##Target Audience & Scope:
-• Target Audience: Software Development Teams (Product Managers, Scrum Masters, and Software Developers) who struggle with manual backlog refinement and requirement gathering.
-• Project Scale/Size: Designed for small to medium-sized agile teams (approx. 5–15 members) who need rapid AI-assisted drafting to reduce overhead and improve sprint planning efficiency.
-• Impact: The solution targets the 'J-curve' of AI adoption by lowering the barrier for teams to integrate AI into their daily Scrum ceremonies.
+## Target Audience & Scope:
+* **Target Audience: Software Development Teams (Product Managers, Scrum Masters, and Software Developers) who struggle with manual backlog refinement and requirement gathering.
+* **Project Scale/Size: Designed for small to medium-sized agile teams (approx. 5–15 members) who need rapid AI-assisted drafting to reduce overhead and improve sprint planning efficiency.
+* **Impact: The solution targets the 'J-curve' of AI adoption by lowering the barrier for teams to integrate AI into their daily Scrum ceremonies.
 
 ## 📋 Agile & Scrum Framework
 This project was developed strictly following Scrum methodologies and iterative software development lifecycle (SDLC) practices:
@@ -51,10 +51,12 @@ If you want to test this project on your local machine, follow these steps:
    cd ai-userstory-generator
 
    
-2. ##Install requirements:
+2. **Install requirements:**
+   ```bash
    pip install -r requirements.txt
 
-3. ##run the application 
+4. **run the application:**
+   ```bash
    streamlit run app.py
 
 
