@@ -30,7 +30,7 @@ if st.button("Generate User Story"):
         prompt_message = f"You are an expert Agile Coach and Business Analyst. Please convert the following raw software requirement into a standard Agile User Story format (As a..., I want..., So that...) and provide clear Acceptance Criteria:\n\nRequirement: {user_input}"
         
         data = {
-            "model": "llama-3.3-70b-versatile",
+            "model": "qwen/qwen3.6-27b",
             "messages": [{"role": "user", "content": prompt_message}]
         }
         
