@@ -30,11 +30,11 @@ if st.button("Generate User Story"):
         prompt_message = f"You are an expert Agile Coach and Business Analyst. Please convert the following raw software requirement into a standard Agile User Story format (As a..., I want..., So that...) and provide clear Acceptance Criteria:\n\nRequirement: {user_input}"
         
         data = {
-            "model": "qwen/qwen3.6-27b",
+            "model": "meta-llama/llama-4-scout-17b-16e-instruct",
             "messages": [{"role": "user", "content": prompt_message}]
         }
         
-        with st.spinner("Groq AI is thinking fast... Please wait..."):
+        with st.spinner("qwen AI is thinking fast... Please wait..."):
             try:
                 response = requests.post("https://api.groq.com/openai/v1/chat/completions", json=data, headers=headers)
                 result = response.json()
