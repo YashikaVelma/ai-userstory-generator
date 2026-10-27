@@ -34,7 +34,7 @@ if st.button("Generate User Story"):
             "messages": [{"role": "user", "content": prompt_message}]
         }
         
-        with st.spinner("qwen AI is thinking fast... Please wait..."):
+        with st.spinner("Your AI is thinking fast... Please wait..."):
             try:
                 response = requests.post("https://api.groq.com/openai/v1/chat/completions", json=data, headers=headers)
                 result = response.json()
