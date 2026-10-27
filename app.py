@@ -31,7 +31,7 @@ if st.button("Generate User Story"):
     if not api_key:
         st.error("API Key missing! Go to Streamlit > Settings > Secrets")
     elif not user_input:
-        st.error("Idea ရိုက်ထည့်ပါဦး!")
+        st.error("Input the Idea Again!")
     else:
         headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}
         
